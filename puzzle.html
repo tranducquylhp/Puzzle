@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <button type="button" id="ha1" onclick="swap1()"><img id="hinh_anh_1" src="puzzle/panda_swap_part1x1.jpg" height="160" width="800"/> </button>
+    <button type="button" id="ha2" onclick="swap2()"><img id="hinh_anh_2" src="puzzle/funny-cat1_part2x1.jpg" height="160" width="800"/></button>
+    <button type="button" id="ha3" onclick="swap3()"><img id="hinh_anh_3" src="puzzle/monkey_part3x1.jpg" height="160" width="800"/></button>
+    <button type="button" id="ha4" onclick="swap4()"><img id="hinh_anh_4" src="puzzle/funny-cat1_part4x1.jpg" height="160" width="800"/></button>
+    <button type="button" id="ha5" onclick="swap5()"><img id="hinh_anh_5" src="puzzle/monkey_part5x1.jpg" height="160" width="800"/></button>
+    <script>
+        var hinh11 = "http://localhost:63342/Puzzle/puzzle/monkey_part1x1.jpg";
+        var hinh12 = "http://localhost:63342/Puzzle/puzzle/panda_swap_part1x1.jpg";
+        var hinh13= "http://localhost:63342/Puzzle/puzzle/funny-cat1_part1x1.jpg";
+        var hinh21 = "http://localhost:63342/Puzzle/puzzle/monkey_part2x1.jpg";
+        var hinh22 = "http://localhost:63342/Puzzle/puzzle/panda_swap_part2x1.jpg";
+        var hinh23 = "http://localhost:63342/Puzzle/puzzle/funny-cat1_part2x1.jpg";
+        var hinh31 = "http://localhost:63342/Puzzle/puzzle/monkey_part3x1.jpg";
+        var hinh32 = "http://localhost:63342/Puzzle/puzzle/panda_swap_part3x1.jpg";
+        var hinh33 = "http://localhost:63342/Puzzle/puzzle/funny-cat1_part3x1.jpg";
+        var hinh41 = "http://localhost:63342/Puzzle/puzzle/monkey_part4x1.jpg";
+        var hinh42 = "http://localhost:63342/Puzzle/puzzle/panda_swap_part4x1.jpg";
+        var hinh43 = "http://localhost:63342/Puzzle/puzzle/funny-cat1_part4x1.jpg";
+        var hinh51 = "http://localhost:63342/Puzzle/puzzle/monkey_part5x1.jpg";
+        var hinh52 = "http://localhost:63342/Puzzle/puzzle/panda_swap_part5x1.jpg";
+        var hinh53 = "http://localhost:63342/Puzzle/puzzle/funny-cat1_part5x1.jpg";
+        function swap1() {
+            if (document.getElementById("hinh_anh_1").src === hinh11)
+                    document.getElementById("hinh_anh_1").src = hinh12;
+            else
+            if (document.getElementById("hinh_anh_1").src === hinh12)
+                    document.getElementById("hinh_anh_1").src = hinh13;
+            else
+            if (document.getElementById("hinh_anh_1").src === hinh13)
+                    document.getElementById("hinh_anh_1").src = hinh11;
+            let kt1= document.getElementById("hinh_anh_1").src==hinh11 &&
+                document.getElementById("hinh_anh_2").src== hinh21 &&
+                document.getElementById("hinh_anh_3").src== hinh31 &&
+                document.getElementById("hinh_anh_4").src== hinh41 &&
+                document.getElementById("hinh_anh_5").src== hinh51;
+            let kt2= document.getElementById("hinh_anh_1").src==hinh12 &&
+                document.getElementById("hinh_anh_2").src== hinh22 &&
+                document.getElementById("hinh_anh_3").src== hinh32 &&
+                document.getElementById("hinh_anh_4").src== hinh42 &&
+                document.getElementById("hinh_anh_5").src== hinh52;
+            let kt3= document.getElementById("hinh_anh_1").src==hinh13 &&
+                document.getElementById("hinh_anh_2").src== hinh23 &&
+                document.getElementById("hinh_anh_3").src== hinh33 &&
+                document.getElementById("hinh_anh_4").src== hinh43 &&
+                document.getElementById("hinh_anh_5").src== hinh53;
+            if (kt1 || kt2 || kt3){ alert("Chúc mừng!!!");}
+        }
+        function swap2() {
+            if (document.getElementById("hinh_anh_2").src === hinh21)
+                document.getElementById("hinh_anh_2").src = hinh22;
+            else
+            if (document.getElementById("hinh_anh_2").src === hinh22)
+                document.getElementById("hinh_anh_2").src = hinh23;
+            else
+            if (document.getElementById("hinh_anh_2").src === hinh23)
+                document.getElementById("hinh_anh_2").src = hinh21;
+            let kt1= document.getElementById("hinh_anh_1").src==hinh11 &&
+                document.getElementById("hinh_anh_2").src== hinh21 &&
+                document.getElementById("hinh_anh_3").src== hinh31 &&
+                document.getElementById("hinh_anh_4").src== hinh41 &&
+                document.getElementById("hinh_anh_5").src== hinh51;
+            let kt2= document.getElementById("hinh_anh_1").src==hinh12 &&
+                document.getElementById("hinh_anh_2").src== hinh22 &&
+                document.getElementById("hinh_anh_3").src== hinh32 &&
+                document.getElementById("hinh_anh_4").src== hinh42 &&
+                document.getElementById("hinh_anh_5").src== hinh52;
+            let kt3= document.getElementById("hinh_anh_1").src==hinh13 &&
+                document.getElementById("hinh_anh_2").src== hinh23 &&
+                document.getElementById("hinh_anh_3").src== hinh33 &&
+                document.getElementById("hinh_anh_4").src== hinh43 &&
+                document.getElementById("hinh_anh_5").src== hinh53;
+            if (kt1 || kt2 || kt3){ alert("Chúc mừng!!!");}
+        }
+        function swap3() {
+            if (document.getElementById("hinh_anh_3").src === hinh31)
+                document.getElementById("hinh_anh_3").src = hinh32;
+            else
+            if (document.getElementById("hinh_anh_3").src === hinh32)
+                document.getElementById("hinh_anh_3").src = hinh33;
+            else
+            if (document.getElementById("hinh_anh_3").src === hinh33)
+                document.getElementById("hinh_anh_3").src = hinh31;
+            let kt1= document.getElementById("hinh_anh_1").src==hinh11 &&
+                document.getElementById("hinh_anh_2").src== hinh21 &&
+                document.getElementById("hinh_anh_3").src== hinh31 &&
+                document.getElementById("hinh_anh_4").src== hinh41 &&
+                document.getElementById("hinh_anh_5").src== hinh51;
+            let kt2= document.getElementById("hinh_anh_1").src==hinh12 &&
+                document.getElementById("hinh_anh_2").src== hinh22 &&
+                document.getElementById("hinh_anh_3").src== hinh32 &&
+                document.getElementById("hinh_anh_4").src== hinh42 &&
+                document.getElementById("hinh_anh_5").src== hinh52;
+            let kt3= document.getElementById("hinh_anh_1").src==hinh13 &&
+                document.getElementById("hinh_anh_2").src== hinh23 &&
+                document.getElementById("hinh_anh_3").src== hinh33 &&
+                document.getElementById("hinh_anh_4").src== hinh43 &&
+                document.getElementById("hinh_anh_5").src== hinh53;
+            if (kt1 || kt2 || kt3){ alert("Chúc mừng!!!");}
+        }
+        function swap4() {
+            if (document.getElementById("hinh_anh_4").src === hinh41)
+                document.getElementById("hinh_anh_4").src = hinh42;
+            else
+            if (document.getElementById("hinh_anh_4").src === hinh42)
+                document.getElementById("hinh_anh_4").src = hinh43;
+            else
+            if (document.getElementById("hinh_anh_4").src === hinh43)
+                document.getElementById("hinh_anh_4").src = hinh41;
+            let kt1= document.getElementById("hinh_anh_1").src==hinh11 &&
+                document.getElementById("hinh_anh_2").src== hinh21 &&
+                document.getElementById("hinh_anh_3").src== hinh31 &&
+                document.getElementById("hinh_anh_4").src== hinh41 &&
+                document.getElementById("hinh_anh_5").src== hinh51;
+            let kt2= document.getElementById("hinh_anh_1").src==hinh12 &&
+                document.getElementById("hinh_anh_2").src== hinh22 &&
+                document.getElementById("hinh_anh_3").src== hinh32 &&
+                document.getElementById("hinh_anh_4").src== hinh42 &&
+                document.getElementById("hinh_anh_5").src== hinh52;
+            let kt3= document.getElementById("hinh_anh_1").src==hinh13 &&
+                document.getElementById("hinh_anh_2").src== hinh23 &&
+                document.getElementById("hinh_anh_3").src== hinh33 &&
+                document.getElementById("hinh_anh_4").src== hinh43 &&
+                document.getElementById("hinh_anh_5").src== hinh53;
+            if (kt1 || kt2 || kt3){ alert("Chúc mừng!!!");}
+        }
+        function swap5() {
+            if (document.getElementById("hinh_anh_5").src === hinh51)
+                document.getElementById("hinh_anh_5").src = hinh52;
+            else
+            if (document.getElementById("hinh_anh_5").src === hinh52)
+                document.getElementById("hinh_anh_5").src = hinh53;
+            else
+            if (document.getElementById("hinh_anh_5").src === hinh53)
+                document.getElementById("hinh_anh_5").src = hinh51;
+            let kt1= document.getElementById("hinh_anh_1").src==hinh11 &&
+                document.getElementById("hinh_anh_2").src== hinh21 &&
+                document.getElementById("hinh_anh_3").src== hinh31 &&
+                document.getElementById("hinh_anh_4").src== hinh41 &&
+                document.getElementById("hinh_anh_5").src== hinh51;
+            let kt2= document.getElementById("hinh_anh_1").src==hinh12 &&
+                document.getElementById("hinh_anh_2").src== hinh22 &&
+                document.getElementById("hinh_anh_3").src== hinh32 &&
+                document.getElementById("hinh_anh_4").src== hinh42 &&
+                document.getElementById("hinh_anh_5").src== hinh52;
+            let kt3= document.getElementById("hinh_anh_1").src==hinh13 &&
+                document.getElementById("hinh_anh_2").src== hinh23 &&
+                document.getElementById("hinh_anh_3").src== hinh33 &&
+                document.getElementById("hinh_anh_4").src== hinh43 &&
+                document.getElementById("hinh_anh_5").src== hinh53;
+            if (kt1 || kt2 || kt3){ alert("Chúc mừng!!!");}
+        }
+
+    </script>
+</body>
+</html>
